@@ -1,8 +1,24 @@
 def main():
-    print("Guess the number")
     randomnumber = 35
-
-    found = False;
+    found = False
     while not found:
-        userInput = int(input("Enter a number: "))
-        
+        userinput = int(input("Enter the number here: "))
+        if userinput == randomnumber:
+           found = False
+        else:
+            found = True
+    print("Congrat! You won the game.")
+
+if __name__ == "__main__":
+    main()
+
+
+
+
+
+
+
+        #https://pythonspot.com/
+        #https://www.tutorialspoint.com/python/python_basic_operators.htm
+
+
