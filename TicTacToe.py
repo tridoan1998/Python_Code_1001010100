@@ -1,24 +1,12 @@
-def main():
-    randomnumber = 35
-    found = False
-    while not found:
-        userinput = int(input("Enter the number here: "))
-        if userinput == randomnumber:
-           found = False
-        else:
-            found = True
-    print("Congrat! You won the game.")
-
-if __name__ == "__main__":
-    main()
-
-
-
-
-
-
-
-        #https://pythonspot.com/
-        #https://www.tutorialspoint.com/python/python_basic_operators.htm
-
-
+stop = False
+while stop is False:
+    inputnumber = int(input("Enter an integer: "))
+    if(inputnumber % 4 == 0):
+        print("differnt")
+        exit(1)
+    if(inputnumber % 2 == 0):
+        print("even")
+    else:
+        print("Odd")
+    if(inputnumber == -1):
+        exit(1)
